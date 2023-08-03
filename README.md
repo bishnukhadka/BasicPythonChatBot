@@ -8,17 +8,17 @@ Things we might need to do:
     - for this we might need a way to calculate the probability of the i/p message being message from our records. 
         - to calculte the probabilty we might match the i/p with possible inputs from our records and find **how many words among them matched?**. 
             - for example: user i/p = `how you doing?` matches with `how are you doing?` by 2 words.
-    - But this is **not enough to distinguish the intent.** To understand this let's take an example: lets say i/p = `how you doing`, and we have in our poissible input records, `r[0]=what are you doing?` and `r[1]=how are you?`. Here, both records 0 and 1 match the i/p by 2 words.
+    - But this is **not enough to distinguish the intent.** To understand this let's take an example: lets say i/p = `how you doing`, and we have in our poissible input records, `r[0]=what are you doing?` and `r[1]=how are you?`. Here, both records 0 and 1 match the i/p by 2 words. But they mean different things. We must have a way to distinguish between same match score responses. 
     - To combat this problem, we need a way to assign a particular list of required words that must occur in the i/p, for it to match. 
 - to return a response, we have to store all the possible response in some file. 
-- to return the best response, we can score every response and choose the best.  
+- to return the best response, we can score every response, store it in a list and choose the best.  
 
-### Requirement:
+## Requirement:
     - yaml
     - pyowm
     - newsapi
 
-### Files needed to run the program:
+## Files needed to run the program:
 - config.yml file (in directory containing main)
 
 config.yml must have the following 2 key value pairs
@@ -28,7 +28,7 @@ news_api_key: <YOUR-NESAPI-API-KEY>
 ```
 
 
-### Input/Output examples
+## Input/Output examples
 Greetings
 ```
 Bishnu: hello
