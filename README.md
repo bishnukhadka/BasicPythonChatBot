@@ -29,7 +29,7 @@ news_api_key: <YOUR-NESAPI-API-KEY>
 
 
 ## Input/Output examples
-Greetings
+### Greetings
 ```
 Bishnu: hello
 Bot: Hello!
@@ -42,13 +42,13 @@ Bot: Hello!
 Bishnu: hi 
 Bot: Hello!
 ```
-Temperature
+### Temperature
 ```
 Bishnu: what is the current temperature?
 Bot: Temperature right now is: 23.8
 ```
 
-News
+### News
 ```
 
 Bishnu: can you give me some latest news?
@@ -76,7 +76,7 @@ Zendaya pays tribute to Euphoria co-star Angus Cloud - BBC
 Rex Heuerma
 ```
 
-Day
+### Day
 ```
 Bishnu: what is today?
 Bot: Thursday
